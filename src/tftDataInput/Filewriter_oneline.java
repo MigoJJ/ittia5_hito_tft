@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Filewriter_oneline {
   public static void main(String str) {
     try {
-      FileWriter writer = new FileWriter(TFTmain.udbu5,true);
+      FileWriter writer = new FileWriter(TFTmain.UDBU5,true);
       writer.write("\t"+ str +"\n");
       writer.close();
       System.out.println("String written to file.");
@@ -19,8 +19,8 @@ public class Filewriter_oneline {
   }
     public static void read_write_file(String[] args) {
       try {
-        FileReader reader = new FileReader(TFTmain.udbu5);
-        FileWriter writer = new FileWriter(TFTmain.currentUsersHomeDir +"/ittia_chart/je/panse/doro/text/samsara/6OBJ");
+        FileReader reader = new FileReader(TFTmain.UDBU5);
+        FileWriter writer = new FileWriter(TFTmain.CURRENT_USERS_HOME_DIR +"/ittia_chart/je/panse/doro/text/samsara/6OBJ");
         int c;
         while ((c = reader.read()) != -1) {
           writer.write(c);
