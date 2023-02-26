@@ -52,11 +52,8 @@ public class TFTmain {
         result.remove("o");
 
         // Print the output
-        System.out.println("Date/Time : " + saveTime);
         Filewriter_oneline.main("Date/Time : " + saveTime);
-        for (String s : result) {
-            System.out.println(s);
-        }
+
         System.out.print("\t" + saveTime + outclinic3 +"\n");
         System.out.print(T3 + T4 + TSH + "\n");
         System.out.print(T3R + T4R + TSHR + "\n");
