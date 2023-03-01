@@ -6,4 +6,5 @@
  *
  */
 module TFTinput {
+	requires java.desktop;
 }
