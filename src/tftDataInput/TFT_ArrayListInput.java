@@ -1,20 +1,36 @@
 package tftDataInput;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.ArrayList;	
+import javax.swing.JOptionPane;
+import java.awt.Color;
 
-public class TFT_ArrayListInput {
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class TFT_ArrayListInput  extends JFrame{
+	
 	public static ArrayList<String> getStrings() {
 		ArrayList<String> inputs = new ArrayList<>();
 			try {
-				Scanner scan = new Scanner(System.in);
 			   while (true) {
-							 System.out.println("Enter multiple TFT data inputs, press Enter to stop:");
-							 String input = scan.nextLine();
-							 if (input.isEmpty()) {
-									break;
-							 }
-							 inputs.add(input);
+			        InputDialogInFrame frame = new InputDialogInFrame();
+	   
+				   
+				   
+				    var input = JOptionPane.showInputDialog(frame,"What is TFT results ?\n"
+				    		+ "T3    free-T4    TSH ?\n\n"
+				    		+ "\tp   :   T3 (pg/dL) \n"
+				    		+ "\tn   :   T3 (ng/dL) \n"
+				    		+ "\t4n   :  free-T3 (ng/dL) "
+//				    		, 123456
+				    		);
+				    
+				    
+				     if (input.isEmpty()) {
+							break;
+					 }
+					 inputs.add(input);
 			   }
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -24,3 +40,4 @@ public class TFT_ArrayListInput {
 			return inputs;
 	}
 }
+

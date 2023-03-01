@@ -8,10 +8,6 @@ public class tftDataConsoleinput {
   public static void main(String[] args) {
     /* JOptionPane Java user input example */
     var name = JOptionPane.showInputDialog("What is T3 ?");
-    
-    
-    
-    
     var output = name + " is such a nice name!";
     
     var name1 = JOptionPane.showInputDialog("What is free-T4 ?");

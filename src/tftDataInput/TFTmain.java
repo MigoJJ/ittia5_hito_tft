@@ -29,6 +29,7 @@ public class TFTmain {
 
         // Get the input strings from the user
         ArrayList<String> result = TFT_ArrayListInput.getStrings();
+        System.out.println("ArrayList<String> result  :  " + result);
         
         // Modify column labels based on user inputs
         for (int i = 0; i < result.size(); i++) {
